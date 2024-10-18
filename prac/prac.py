@@ -1,0 +1,10 @@
+mark1=int(input("enter 5 marks"))
+mark2=int(input("enter 5 marks"))
+mark3=int(input("enter 5 marks"))
+mark4=int(input("enter 5 marks"))
+m5=int(input("enter 5 marks"))
+m6=int(input("enter 5 marks"))
+m7=int(input("enter 5 marks"))
+m8=int(input("enter 5 marks"))
+add=mark1+mark2+mark3+mark4+m5+m6+m7+m8/8
+print(add)

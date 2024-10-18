@@ -1,21 +1,28 @@
-#button
-from tkinter import *
+from tkinter import * 
 from tkinter import messagebox
 root=Tk()
-def message1():
-    messagebox.showinfo("infomessage","Good Night")
-def message2():
-     messagebox.showerror("Errormessage","Error in your program")
-def message3():
-     messagebox.showwarning("Warningmessage","Warining message")
+def m1():
+     messagebox.showinfo("Information","Good night")
+def m2():
+     messagebox.showerror("Error Page ","ERROR")
+def m3():
+     messagebox.showwarning("Warning page ","Warning")
 def m4():
-     messagebox.askretrycancel("message","message")
-b=Button(root,text="info message",command=message1,bg="Black",fg="blue")
-b1=Button(root,text="errror message",command=message2,bg="Black",fg="blue")
-b2=Button(root,text="warning message",command=message3,bg="Black",fg="blue")
-b3=Button(root,text="idk",command=m4)
-b.pack()
-b1.pack()
-b2.pack()
-b3.pack()
+     messagebox.askokcancel("okcancelpage","Try again")
+def m5():
+     messagebox.askyesno("Alert","Are you sure?")
+def m6():
+     messagebox.askquestion('q',"Are you good man?")
+def m7():
+     messagebox.askretrycancel('retry',"not working")
+
+Button(root,text="Info",command=m1).pack()
+Button(root,text="info",command=m2).pack()
+Button(root,text="Info",command=m3).pack()
+Button(root,text="Info",command=m4).pack()
+Button(root,text="Info",command=m5).pack()
+Button(root,text="Info",command=m6).pack()
+Button(root,text="Info",command=m7).pack()
+
+
 root.mainloop()
